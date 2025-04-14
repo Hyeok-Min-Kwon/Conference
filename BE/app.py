@@ -12,6 +12,8 @@ from langchain.tools import Tool
 load_dotenv()
 genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
 
+
+
 # Flask 앱 설정
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "https://fom2024conference.vercel.app"}}, supports_credentials=True)
